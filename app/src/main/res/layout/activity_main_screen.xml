@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.roic.amr_ebada.qoogle.MainScreen"
+    android:background="@drawable/mainqoogle">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pngqoogle"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/query"
+            android:layout_weight="1"
+            android:hint="@string/queryHint"
+            android:padding="4dp"
+            android:textColor="#000"
+            android:background="#ffffff"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/searchButton"
+            android:id="@+id/search"
+            android:layout_marginTop="-2dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:background="#ff9cff87"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:id="@+id/aboutBt"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:background="#ff9cff0d"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:id="@+id/helpBt"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:background="#ff9cff0d"
+            android:layout_marginLeft="10dp"
+           />
+    </LinearLayout>
+
+
+</RelativeLayout>
